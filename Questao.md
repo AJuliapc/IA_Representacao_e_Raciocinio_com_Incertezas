@@ -16,6 +16,7 @@ Primeiro, vamos separar cada conceito e depois, buscar o objetivo de demonstrar 
 
 1. Redes Bayesianas
 Uma Rede Bayesiana é um grafo direcionado acíclico (DAG) que representa variáveis aleatórias e suas dependências condicionais através de arestas. Cada nó representa uma variável, e as setas indicam dependências causais ou condicionais.
+
 Exemplo: Rede Bayesiana do Tempo e Trânsito
 Variáveis:
 - Chuva (C): Está chovendo ou não. (Sim/Não)
@@ -27,6 +28,7 @@ No caso, teríamos uma Rede Bayesiana representada por C → E → A → L
 
 2. Independência condicional
 Duas variáveis 𝑋 e 𝑌 são condicionalmente independentes dado uma terceira variável 𝑍 se, uma vez conhecido 𝑍, o conhecimento de 𝑋 não traz informação adicional sobre 𝑌, e vice-versa. Em redes Bayesianas, a estrutura do grafo pode indicar quais variáveis são independentes condicionalmente, o que ajuda a simplificar o modelo e o cálculo das probabilidades.
+
 Exemplo: Situação de Chuva
 Imagine as seguintes variáveis:
 - 𝑋: Está chovendo.
@@ -34,8 +36,11 @@ Imagine as seguintes variáveis:
 - 𝑍: Foi ligado o sistema de irrigação do jardim.
 
 Relações:
-Se está chovendo, o gramado fica molhado.
-Se o sistema de irrigação foi ligado, o gramado também fica molhado.
-Ou seja:
-𝑋 (chuva) e 𝑍 (irrigação) são causas possíveis para 𝑌 (gramado molhado).
+- Se está chovendo, o gramado fica molhado.
+- Se o sistema de irrigação foi ligado, o gramado também fica molhado.
+- Ou seja: 𝑋 (chuva) e 𝑍 (irrigação) são causas possíveis para 𝑌 (gramado molhado).
+
+Então:
+- 𝑋 e 𝑍 são independentes quando não sabemos o estado de 𝑌.
+- 𝑋 e 𝑍 são dependentes condicionados em 𝑌 (sabendo que o gramado está molhado).
 
