@@ -27,5 +27,15 @@ No caso, teríamos uma Rede Bayesiana representada por C → E → A → L
 
 2. Independência condicional
 Duas variáveis 𝑋 e 𝑌 são condicionalmente independentes dado uma terceira variável 𝑍 se, uma vez conhecido 𝑍, o conhecimento de 𝑋 não traz informação adicional sobre 𝑌, e vice-versa. Em redes Bayesianas, a estrutura do grafo pode indicar quais variáveis são independentes condicionalmente, o que ajuda a simplificar o modelo e o cálculo das probabilidades.
+Exemplo: Situação de Chuva
+Imagine as seguintes variáveis:
+- 𝑋: Está chovendo.
+- 𝑌: O gramado está molhado.
+- 𝑍: Foi ligado o sistema de irrigação do jardim.
 
+Relações:
+Se está chovendo, o gramado fica molhado.
+Se o sistema de irrigação foi ligado, o gramado também fica molhado.
+Ou seja:
+𝑋 (chuva) e 𝑍 (irrigação) são causas possíveis para 𝑌 (gramado molhado).
 
