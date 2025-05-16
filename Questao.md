@@ -23,6 +23,7 @@ Variáveis:
 - Engarrafamento (E): Há engarrafamento no trânsito? (Sim/Não)
 - Atraso (A): Você se atrasou para o trabalho? (Sim/Não)
 - Alarme (L): O alarme do seu carro disparou? (Sim/Não)
+
 No caso, teríamos uma Rede Bayesiana representada por C → E → A → L
 
 
@@ -30,6 +31,7 @@ No caso, teríamos uma Rede Bayesiana representada por C → E → A → L
 Duas variáveis 𝑋 e 𝑌 são condicionalmente independentes dado uma terceira variável 𝑍 se, uma vez conhecido 𝑍, o conhecimento de 𝑋 não traz informação adicional sobre 𝑌, e vice-versa. Em redes Bayesianas, a estrutura do grafo pode indicar quais variáveis são independentes condicionalmente, o que ajuda a simplificar o modelo e o cálculo das probabilidades.
 
 Exemplo: Situação de Chuva
+
 Imagine as seguintes variáveis:
 - 𝑋: Está chovendo.
 - 𝑌: O gramado está molhado.
