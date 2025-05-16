@@ -10,3 +10,5 @@ A questão de independência condicional mais geral que se pode fazer em uma red
 4.  Se Z bloqueia todos os caminhos entre X e Y no grafo resultante, então Z d-separa X e Y. Nesse caso, X é condicionalmente independente de Y, dado Z. Caso contrário, a rede Bayesiana original não requer independência condicional.
 
 Em resumo, então, d-separação significa separação no subgrafo ancestral, moralizado e não direcionado. Aplicando a definição à rede de roubo na Figura 13.2, podemos deduzir que *Burglary* e *Earthquake* são independentes dado o conjunto vazio (isto é, eles são absolutamente independentes); que eles não são necessariamente condicionalmente independentes dado *Alarm*; e que *JohnCalls* e *MaryCalls* são condicionalmente independentes dado *Alarm*. Observe também que a propriedade do *Markov blanket* segue diretamente da propriedade de d-separação, já que o *Markov blanket* de uma variável a d-separa de todas as outras variáveis.
+
+{Resposta}
