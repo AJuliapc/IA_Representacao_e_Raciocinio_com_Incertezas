@@ -46,3 +46,14 @@ Então:
 - 𝑋 e 𝑍 são independentes quando não sabemos o estado de 𝑌.
 - 𝑋 e 𝑍 são dependentes condicionados em 𝑌 (sabendo que o gramado está molhado).
 
+3. Critério de d-separação
+O critério de d-separação é uma regra gráfica que nos permite determinar se, dadas certas variáveis, outras duas são condicionalmente independentes sem precisar calcular diretamente as probabilidades. Ela verifica se existe um caminho "ativo" de informação entre duas variáveis. Se todos os caminhos forem bloqueados, elas são independentes condicionalmente.
+
+Há 3 casos:
+- Cadeia causal: A → B → C: Existe um fluxo de informação de A para C através de B → A e C são dependentes, sem observar nada. Ao condicionarmos B, A → B → C é bloqueado, logo A e C são independentes dado B.
+- Causa comum: A ← B → C: B é uma causa comum de A e C. Elas compartilham uma dependência → A e C são dependentes, sem observar nada. Ao condicionarmos B, o caminho é bloqueado, logo  A e C são independentes dado B.
+- Collider: A → B ← C: B é um collider. Isso bloqueia o caminho naturalmente, sem observar nada. Ao condicionarmos B, ativamos o caminho, logo A e C se tornam dependentes.
+
+Com isso, o d-separação é utilizado em redes bayesianas como A → B → C, que ao condicionarmos uma variável como B, um caminho é bloqueado, nisto se cria uma independência condicional.
+
+
